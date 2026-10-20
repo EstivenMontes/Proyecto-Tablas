@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Práctica de tablas en HTML</h1>
+       <!--Aqui va un<section> por cada tabla de los pasos 1 a 9--> 
+        <section>
+            <table>
+                <tr>
+                    <td>Ana</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>3.8</td>
+                </tr>
+            </table>
+        </section>
+                        <h1> paso 2 encabezados con th</h1>
+        <section>           
+            <table>
+                <tr>
+                    <th>Aprendiz</th>
+                    <th>Nota</th>
+                </tr>
+                <tr>
+                   <td>Ana</td>
+                   <td>4.5</td>
+                </tr>
+            </table>
+        </section> 
+                  <h1> paso 3 Divide la tabla en secciones</h1>   
+        <section>   
+            <table>
+                <thead>
+                    <tr>
+                        <th>producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Teclado</td><td>$85.000</td></tr>
+                    <tr><td>Mouse</td><td>$40.000</td></tr>
+                <tfoot>
+                    <tr><td>Total</td><td>$125.000</td></tr>                 
+                </tfoot>
+            </table>
+        </section>
+                     <h1>paso 4 ponle título con caption</h1>
+        <section>
+            <table>
+                <caption>Notas del primer trimestre</caption>
+                <thead>
+                    <tr><th>Aprendiz</th><th>Nota</th></tr>
+                </thead>
+                <tbody>
+                     <tr><td>Ana</td><td>4.5 </td></tr>
+                </tbody>
+            </table>                           
+        </section> 
+
+         <h1>paso 5 Unir columnas con COLSPAN</h1>
+         
+         <section>         
+            <table>
+                    <tr>
+                        <th colspan="2">Datos personales</th>
+                        <th>Ficha</th>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Gómez</td>
+                        <td>2875432</td>
+                    </tr>
+            </table>
+        </section>
+
+            <h1>paso 6 Unir filas con rowspan</h1>
+        <section>
+            <table>
+                <tr>
+                    <th rowspan="2">Lunes</th>
+                    <td>7:00 a.m</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                   <!--Aqui no va "Lunes": ya ocupa esta fila-->   
+                   <td>9:00 a.m</td>
+                   <td>css</td>
+                </tr>
+            </table>
+        </section>
+
+             <h1>paso 7 Accesibilidad con scope</h1>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Aprendiz</th>
+                        <th scope="col">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ana</th>
+                        <td>4.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+               <h1>paso 8 Dale estilo co css</h1>
+               <h1>paso 9 Tablas en el celular</h1>
+
+        <section>
+            <div class="tabla-contenedor">
+                <table>...</table>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>
